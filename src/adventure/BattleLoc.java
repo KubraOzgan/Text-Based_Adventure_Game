@@ -56,18 +56,6 @@ public abstract class BattleLoc extends Location {
 				String select = sc.next().toUpperCase();
 				
 				if(select.equals("F")) {
-					/*System.out.println("You hit!");
-					this.getObstacle().setHealth(this.getObstacle().getHealth() - this.getPlayer().getTotalDamage());
-					afterHit();
-					
-					if(this.getObstacle().getHealth() > 0) {
-						System.out.println("Obstacle hit you!");
-						int obstDamage = this.getObstacle().getDamage() - this.getPlayer().getArmor().getBlock();
-						if(obstDamage < 0)
-							obstDamage = 0;
-						this.getPlayer().setHealth(this.getPlayer().getHealth() - obstDamage);
-						afterHit();
-					}*/
 					whoHit();
 					afterHit();
 				}
