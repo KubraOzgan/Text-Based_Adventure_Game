@@ -1,7 +1,5 @@
 package adventure;
 
-import java.util.Random;
-
 public abstract class BattleLoc extends Location {
 	
 	private Obstacle obstacle;
@@ -41,8 +39,6 @@ public abstract class BattleLoc extends Location {
 	public int obstacleNumber() {
 		int random = (int) (Math.random() * this.getMaxObstacle() + 1);
 		return random;
-		/*Random r = new Random();
-		return r.nextInt(this.getMaxObstacle() + 1);*/
 	}
 	
 	public boolean combat(int obstNumber) {
